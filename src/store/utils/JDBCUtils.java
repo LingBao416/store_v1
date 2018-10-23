@@ -125,4 +125,12 @@ public class JDBCUtils {
 			e.printStackTrace();
 		}
 	}
+
+	public static void main(String[] args) {
+		try {
+			System.out.println(getConnection());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }
