@@ -114,24 +114,24 @@ font {
 				<font>会员登录</font>USER LOGIN
 
 				<div>&nbsp;</div>
-<form class="form-horizontal">
+<form class="form-horizontal" action="${pageContext.request.contextPath}/UserServlet?method=userLogin" method="post">
   
  <div class="form-group">
     <label for="username" class="col-sm-2 control-label">用户名</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="username" placeholder="请输入用户名">
+      <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名">
     </div>
   </div>
    <div class="form-group">
     <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
     <div class="col-sm-6">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+      <input type="password" class="form-control" id="inputPassword3" name="password" placeholder="请输入密码">
     </div>
   </div>
    <div class="form-group">
         <label for="inputPassword3" class="col-sm-2 control-label">验证码</label>
     <div class="col-sm-3">
-      <input type="text" class="form-control" id="inputPassword3" placeholder="请输入验证码">
+      <input type="text" class="form-control" id="inputPassword3" name="checkcode" placeholder="请输入验证码">
     </div>
     <div class="col-sm-3">
       <img src="${pageContext.request.contextPath}/img/captcha.jhtml"/>
